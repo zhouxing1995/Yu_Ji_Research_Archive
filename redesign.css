@@ -1,0 +1,159 @@
+:root {
+  --soft: #f4f4f1;
+}
+
+.site-header {
+  height: 64px;
+  padding-inline: clamp(18px, 3vw, 46px);
+  border-bottom-color: #d8d7d2;
+}
+
+.brand {
+  min-width: 150px;
+  font-size: 15px;
+  letter-spacing: .02em;
+}
+
+.brand-name {
+  display: inline-block;
+}
+
+.hero {
+  min-height: min(820px, calc(100svh - 64px));
+}
+
+.hero-overlay {
+  min-height: min(820px, calc(100svh - 64px));
+  padding: clamp(28px, 5vw, 70px) clamp(20px, 5vw, 76px) clamp(26px, 4vw, 48px);
+}
+
+.hero-title {
+  max-width: 760px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8vh 0;
+}
+
+.hero-title h1 {
+  display: block;
+  font-size: clamp(58px, 9vw, 128px);
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.hero-title h1 span {
+  display: block;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: inherit;
+}
+
+.hero-title > p {
+  margin-top: 22px;
+  font-size: clamp(15px, 1.4vw, 20px);
+}
+
+.hero-meta {
+  max-width: 860px;
+  font-size: 11px;
+}
+
+.hero-caption {
+  right: clamp(20px, 5vw, 76px);
+  bottom: 20px;
+}
+
+.section {
+  padding-block: clamp(58px, 7vw, 96px);
+}
+
+.section-head {
+  margin-bottom: 32px;
+}
+
+.intro-copy h2,
+.practice-lede h2,
+.timeline-note h2,
+.source-intro h2 {
+  font-size: clamp(30px, 4.2vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+
+.intro-copy p,
+.practice-lede p,
+.timeline-note p,
+.source-intro p {
+  margin-top: 19px;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.practice-section,
+.exhibitions-section,
+.references-section {
+  background: #f4f4f1;
+}
+
+.practice-grid {
+  gap: clamp(28px, 5vw, 80px);
+}
+
+.keyword-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 18px;
+}
+
+.keyword {
+  padding-block: 13px 15px;
+}
+
+.timeline-track {
+  gap: 14px;
+}
+
+.timeline-card {
+  flex-basis: min(250px, 68vw);
+}
+
+.cards-grid,
+.source-grid {
+  gap: 0 22px;
+}
+
+.work-card {
+  padding-bottom: 28px;
+}
+
+.source-card {
+  grid-template-columns: 142px minmax(0, 1fr);
+  gap: 15px;
+}
+
+.source-card img {
+  height: 104px;
+}
+
+.site-footer {
+  padding-inline: clamp(18px, 3vw, 46px);
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    height: 60px;
+  }
+
+  .hero,
+  .hero-overlay {
+    min-height: calc(100svh - 60px);
+  }
+
+  .hero-title h1 {
+    font-size: clamp(56px, 18vw, 104px);
+  }
+
+  .keyword-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
